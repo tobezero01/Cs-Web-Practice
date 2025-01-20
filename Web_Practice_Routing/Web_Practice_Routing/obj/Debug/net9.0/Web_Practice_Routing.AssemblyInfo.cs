@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web_Practice_Routing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbd91dbf474cbd146445c022634f9878d8086794")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5542da2601264a166602268dd9262f92332d91d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web_Practice_Routing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web_Practice_Routing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
