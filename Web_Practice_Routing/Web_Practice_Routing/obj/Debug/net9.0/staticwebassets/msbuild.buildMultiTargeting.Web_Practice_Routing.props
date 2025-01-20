@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Web_Practice_Routing.props" />
+</Project>
