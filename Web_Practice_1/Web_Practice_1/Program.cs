@@ -26,6 +26,7 @@ app.Use(async (HttpContext context, RequestDelegate next) =>
 // middleware 2
 //app.UseMiddleware();
 app.UseHelloMiddleware();
+
 // middleware 3
 app.Run(async (HttpContext context) =>
 {

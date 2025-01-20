@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\C#\\Web_Practice\\Web_Practice_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|d:\\c#\\web_practice\\web_practice_1\\web_practice_1\\web_practice_1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|solutionrelative:web_practice_1\\web_practice_1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|d:\\c#\\web_practice\\web_practice_1\\web_practice_1\\custommiddleware\\mycustommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|solutionrelative:web_practice_1\\custommiddleware\\mycustommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|d:\\c#\\web_practice\\web_practice_1\\web_practice_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|solutionrelative:web_practice_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|d:\\c#\\web_practice\\web_practice_1\\web_practice_1\\custommiddleware\\hellocustommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|solutionrelative:web_practice_1\\custommiddleware\\hellocustommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|d:\\c#\\web_practice\\web_practice_1\\web_practice_1\\web_practice_1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{984FCF2A-FA39-4C2E-99E8-5F55B0F2BE25}|Web_Practice_1\\Web_Practice_1.csproj|solutionrelative:web_practice_1\\web_practice_1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,31 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\Program.cs",
+              "RelativeDocumentMoniker": "Web_Practice_1\\Program.cs",
+              "ToolTip": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\Program.cs",
+              "RelativeToolTip": "Web_Practice_1\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T22:26:04.075Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Web_Practice_1",
+              "Title": "MyCustomMiddleWare.cs",
+              "DocumentMoniker": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\CustomMiddleware\\MyCustomMiddleWare.cs",
+              "RelativeDocumentMoniker": "Web_Practice_1\\CustomMiddleware\\MyCustomMiddleWare.cs",
+              "ToolTip": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\CustomMiddleware\\MyCustomMiddleWare.cs",
+              "RelativeToolTip": "Web_Practice_1\\CustomMiddleware\\MyCustomMiddleWare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T21:14:22.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HelloCustomMiddleware.cs",
+              "DocumentMoniker": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\CustomMiddleware\\HelloCustomMiddleware.cs",
+              "RelativeDocumentMoniker": "Web_Practice_1\\CustomMiddleware\\HelloCustomMiddleware.cs",
+              "ToolTip": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\CustomMiddleware\\HelloCustomMiddleware.cs",
+              "RelativeToolTip": "Web_Practice_1\\CustomMiddleware\\HelloCustomMiddleware.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA1wB8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T07:03:37.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web_Practice_1.csproj",
               "DocumentMoniker": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\Web_Practice_1.csproj",
               "RelativeDocumentMoniker": "Web_Practice_1\\Web_Practice_1.csproj",
               "ToolTip": "D:\\C#\\Web_Practice\\Web_Practice_1\\Web_Practice_1\\Web_Practice_1.csproj",
               "RelativeToolTip": "Web_Practice_1\\Web_Practice_1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-08T20:07:20.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-01-08T22:25:48.779Z"
             }
           ]
         },
