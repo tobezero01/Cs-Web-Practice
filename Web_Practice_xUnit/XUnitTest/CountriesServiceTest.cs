@@ -65,7 +65,7 @@ namespace XUnitTest
 			CountryResponse response = _countriesService.AddCountry(request);
 
 			//Assert
-			Assert.True(response.CountryId != Guid.Empty);
+			Assert.True(response.CountryID != Guid.Empty);
 		}
 
 		#endregion AddCountry

@@ -27,10 +27,23 @@ namespace Service
 				throw new ArgumentException("Duplicated country name");
 			}
 			Country? country = request.ToCountry();
-			country.CountryId = Guid.NewGuid();
+			country.countryID = Guid.NewGuid();
 			_countries.Add(country);
 
 			return country.ToCountryResponse();
+		}
+
+		public CountryResponse? GetCountryByCountryID(Guid? countryID)
+		{
+			if (countryID == null)
+				return null;
+
+			Country? country_response_from_list = _countries.FirstOrDefault(temp => temp.countryID == countryID);
+
+			if (country_response_from_list == null)
+				return null;
+
+			return country_response_from_list.ToCountryResponse();
 		}
 	}
 }
