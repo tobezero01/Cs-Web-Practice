@@ -45,5 +45,19 @@ namespace ServiceContracts
 		/// <param name="sortOrder">The sort order.</param>
 		/// <returns></returns>
 		List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOrder);
+
+		/// <summary>
+		/// Updates the specified person details based on the given person ID
+		/// </summary>
+		/// <param name="personUpdateRequest">Person details to update, including person id</param>
+		/// <returns>Returns the person response object after updation</returns>
+		PersonResponse UpdatePerson(PersonUpdateRequest? personUpdateRequest);
+
+		/// <summary>
+		/// Deletes the person.
+		/// </summary>
+		/// <param name="personID">The person identifier.</param>
+		/// <returns></returns>
+		bool DeletePerson(Guid? personID);
 	}
 }
