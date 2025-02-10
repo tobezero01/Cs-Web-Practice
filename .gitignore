@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Web_Practice/.vs
+/.vs
+/Web_Practice_xUnit/.vs/Web_Practice_xUnit
