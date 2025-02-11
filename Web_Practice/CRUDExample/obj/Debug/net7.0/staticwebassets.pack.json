@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\StyleSheet.css"
     },
     {
+      "Id": "D:\\C#\\Web_Practice\\Web_Practice\\CRUDExample\\wwwroot\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\C#\\Web_Practice\\Web_Practice\\CRUDExample\\wwwroot\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\C#\\Web_Practice\\Web_Practice\\CRUDExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\C#\\Web_Practice\\Web_Practice\\CRUDExample\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CRUDExample.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
