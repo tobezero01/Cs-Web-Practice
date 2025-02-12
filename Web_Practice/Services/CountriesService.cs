@@ -1,84 +1,72 @@
 ﻿using Entities;
+using Entities.Data;
 using ServiceContracts;
 using ServiceContracts.DTO;
 
 namespace Services
 {
-  public class CountriesService : ICountriesService
-  {
-    //private field
-    private readonly List<Country> _countries;
+	public class CountriesService : ICountriesService
+	{
+		//private field
+		private readonly PersonDBContext _db;
 
-    //constructor
-    public CountriesService(bool initialize = true)
-    {
-      _countries = new List<Country>();
-      if (initialize)
-      {
-        _countries.AddRange(new List<Country>() {
-        new Country() {  CountryID = Guid.Parse("000C76EB-62E9-4465-96D1-2C41FDB64C3B"), CountryName = "USA" },
+		//constructor
+		public CountriesService(PersonDBContext personsDbContext)
+		{
+			_db = personsDbContext;
+		}
 
-        new Country() { CountryID = Guid.Parse("32DA506B-3EBA-48A4-BD86-5F93A2E19E3F"), CountryName = "Canada" },
+		public CountryResponse AddCountry(CountryAddRequest? countryAddRequest)
+		{
+			//Validation: countryAddRequest parameter can't be null
+			if (countryAddRequest == null)
+			{
+				throw new ArgumentNullException(nameof(countryAddRequest));
+			}
 
-        new Country() { CountryID = Guid.Parse("DF7C89CE-3341-4246-84AE-E01AB7BA476E"), CountryName = "UK" },
+			//Validation: CountryName can't be null
+			if (countryAddRequest.CountryName == null)
+			{
+				throw new ArgumentException(nameof(countryAddRequest.CountryName));
+			}
 
-        new Country() { CountryID = Guid.Parse("15889048-AF93-412C-B8F3-22103E943A6D"), CountryName = "India" },
+			//Validation: CountryName can't be duplicate
+			if (_db.Countries.Count(temp => temp.CountryName == countryAddRequest.CountryName) > 0)
+			{
+				throw new ArgumentException("Given country name already exists");
+			}
 
-        new Country() { CountryID = Guid.Parse("80DF255C-EFE7-49E5-A7F9-C35D7C701CAB"), CountryName = "Australia" }
-        });
-      }
-    }
+			//Convert object from CountryAddRequest to Country type
+			Country country = countryAddRequest.ToCountry();
 
-    public CountryResponse AddCountry(CountryAddRequest? countryAddRequest)
-    {
+			//generate CountryID
+			country.CountryID = Guid.NewGuid();
 
-      //Validation: countryAddRequest parameter can't be null
-      if (countryAddRequest == null)
-      {
-        throw new ArgumentNullException(nameof(countryAddRequest));
-      }
+			//Add country object into _countries
+			_db.Countries.Add(country);
+			_db.SaveChanges();
 
-      //Validation: CountryName can't be null
-      if (countryAddRequest.CountryName == null)
-      {
-        throw new ArgumentException(nameof(countryAddRequest.CountryName));
-      }
+			return country.ToCountryResponse();
+		}
 
-      //Validation: CountryName can't be duplicate
-      if (_countries.Where(temp => temp.CountryName == countryAddRequest.CountryName).Count() > 0)
-      {
-        throw new ArgumentException("Given country name already exists");
-      }
+		public List<CountryResponse> GetAllCountries()
+		{
+			return _db.Countries
+			  .Select(country => country.ToCountryResponse()).ToList();
+		}
 
-      //Convert object from CountryAddRequest to Country type
-      Country country = countryAddRequest.ToCountry();
+		public CountryResponse? GetCountryByCountryID(Guid? countryID)
+		{
+			if (countryID == null)
+				return null;
 
-      //generate CountryID
-      country.CountryID = Guid.NewGuid();
+			Country? country_response_from_list = _db.Countries
+			  .FirstOrDefault(temp => temp.CountryID == countryID);
 
-      //Add country object into _countries
-      _countries.Add(country);
+			if (country_response_from_list == null)
+				return null;
 
-      return country.ToCountryResponse();
-    }
-
-    public List<CountryResponse> GetAllCountries()
-    {
-      return _countries.Select(country => country.ToCountryResponse()).ToList();
-    }
-
-    public CountryResponse? GetCountryByCountryID(Guid? countryID)
-    {
-      if (countryID == null)
-        return null;
-
-      Country? country_response_from_list = _countries.FirstOrDefault(temp => temp.CountryID == countryID);
-
-      if (country_response_from_list == null)
-        return null;
-
-      return country_response_from_list.ToCountryResponse();
-    }
-  }
+			return country_response_from_list.ToCountryResponse();
+		}
+	}
 }
-

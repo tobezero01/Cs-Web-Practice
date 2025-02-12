@@ -114,3 +114,6 @@ D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\Humanizer.dll
 D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\System.CodeDom.dll
+D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\xunit.abstractions.dll
+D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\xunit.assert.dll
+D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net7.0\xunit.core.dll
