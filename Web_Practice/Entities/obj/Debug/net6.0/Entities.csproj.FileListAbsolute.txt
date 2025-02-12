@@ -10,3 +10,6 @@ D:\C#\Web_Practice\Web_Practice\Entities\obj\Debug\net6.0\Entities.dll
 D:\C#\Web_Practice\Web_Practice\Entities\obj\Debug\net6.0\refint\Entities.dll
 D:\C#\Web_Practice\Web_Practice\Entities\obj\Debug\net6.0\Entities.pdb
 D:\C#\Web_Practice\Web_Practice\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\C#\Web_Practice\Web_Practice\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
+D:\C#\Web_Practice\Web_Practice\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\C#\Web_Practice\Web_Practice\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache

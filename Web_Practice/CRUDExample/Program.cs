@@ -1,3 +1,5 @@
+using Entities.Data;
+using Microsoft.EntityFrameworkCore;
 using ServiceContracts;
 using Services;
 
@@ -8,6 +10,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ICountriesService, CountriesService>();
 builder.Services.AddSingleton<IPersonsService, PersonsService>();
 
+builder.Services.AddDbContext<PersonDBContext>(option =>
+{
+	option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+//Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PersonsDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False
 var app = builder.Build();
 
 if (builder.Environment.IsDevelopment())
