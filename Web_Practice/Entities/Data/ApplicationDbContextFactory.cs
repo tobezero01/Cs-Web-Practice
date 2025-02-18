@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Entities.Data
 {
-	public class PersonDBContextFactory : IDesignTimeDbContextFactory<PersonDBContext>
+	public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
 	{
-		public PersonDBContext CreateDbContext(string[] args)
+		public ApplicationDbContext CreateDbContext(string[] args)
 		{
-			var optionsBuilder = new DbContextOptionsBuilder<PersonDBContext>();
+			var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 			optionsBuilder.UseSqlServer(@"Server=.;Database=PersonDb;User Id=sa;Password=ducnhu1234;Encrypt=True;TrustServerCertificate=True;");
 
-			return new PersonDBContext(optionsBuilder.Options);
+			return new ApplicationDbContext(optionsBuilder.Options);
 		}
 	}
 }

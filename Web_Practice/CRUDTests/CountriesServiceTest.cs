@@ -8,6 +8,8 @@ using Xunit;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using Entities.Data;
+using EntityFrameworkCoreMock;
+using Xunit.Abstractions;
 
 namespace CRUDTests
 {
@@ -18,7 +20,16 @@ namespace CRUDTests
 		//constructor
 		public CountriesServiceTest()
 		{
-			_countriesService = new CountriesService(new PersonDBContext(new DbContextOptionsBuilder<PersonDBContext>().Options));
+			var countriesInitialData = new List<Country>() { };
+
+			DbContextMock<ApplicationDbContext> dbContextMock = new DbContextMock<ApplicationDbContext>(
+			  new DbContextOptionsBuilder<ApplicationDbContext>().Options
+			 );
+
+			ApplicationDbContext dbContext = dbContextMock.Object;
+			dbContextMock.CreateDbSetMock(temp => temp.Countries, countriesInitialData);
+
+			_countriesService = new CountriesService(dbContext);
 		}
 
 		#region AddCountry

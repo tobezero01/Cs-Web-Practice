@@ -11,10 +11,10 @@ namespace Services
 	public class CountriesService : ICountriesService
 	{
 		//private field
-		private readonly PersonDBContext _db;
+		private readonly ApplicationDbContext _db;
 
 		//constructor
-		public CountriesService(PersonDBContext personsDbContext)
+		public CountriesService(ApplicationDbContext personsDbContext)
 		{
 			_db = personsDbContext;
 		}
