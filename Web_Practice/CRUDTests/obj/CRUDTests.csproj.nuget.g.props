@@ -24,5 +24,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\ducnh\.nuget\packages\xunit.analyzers\1.18.0</Pkgxunit_analyzers>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\ducnh\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
+    <PkgFluentAssertions Condition=" '$(PkgFluentAssertions)' == '' ">C:\Users\ducnh\.nuget\packages\fluentassertions\8.0.1</PkgFluentAssertions>
   </PropertyGroup>
 </Project>
