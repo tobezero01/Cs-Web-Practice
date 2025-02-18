@@ -128,3 +128,5 @@ D:\C#\Web_Practice\Web_Practice\CRUDExample\obj\Debug\net8.0\refint\CRUDExample.
 D:\C#\Web_Practice\Web_Practice\CRUDExample\obj\Debug\net8.0\CRUDExample.pdb
 D:\C#\Web_Practice\Web_Practice\CRUDExample\obj\Debug\net8.0\CRUDExample.genruntimeconfig.cache
 D:\C#\Web_Practice\Web_Practice\CRUDExample\obj\Debug\net8.0\ref\CRUDExample.dll
+D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net8.0\RepositoryContracts.dll
+D:\C#\Web_Practice\Web_Practice\CRUDExample\bin\Debug\net8.0\RepositoryContracts.pdb

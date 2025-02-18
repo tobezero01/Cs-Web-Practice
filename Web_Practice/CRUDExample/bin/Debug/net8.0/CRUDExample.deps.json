@@ -1932,6 +1932,17 @@
           }
         }
       },
+      "RepositoryContracts/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "runtime": {
+          "RepositoryContracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ServiceContracts/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
@@ -1948,6 +1959,7 @@
         "dependencies": {
           "CsvHelper": "33.0.1",
           "EPPlus": "7.6.0",
+          "RepositoryContracts": "1.0.0",
           "ServiceContracts": "1.0.0",
           "xunit.abstractions": "2.0.3",
           "xunit.assert": "2.9.3",
@@ -3376,6 +3388,11 @@
       "hashPath": "xunit.extensibility.core.2.9.3.nupkg.sha512"
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RepositoryContracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

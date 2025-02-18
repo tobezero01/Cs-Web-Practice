@@ -1,0 +1,16 @@
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.deps.json
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.dll
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.pdb
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\bin\Debug\net6.0\Entities.dll
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\bin\Debug\net6.0\Entities.pdb
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.AssemblyReference.cache
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfoInputs.cache
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfo.cs
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.sourcelink.json
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\Reposito.28D4BA81.Up2Date
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.dll
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\refint\RepositoryContracts.dll
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.pdb
+D:\C#\Web_Practice\Web_Practice\RepositoryContracts\obj\Debug\net6.0\ref\RepositoryContracts.dll
