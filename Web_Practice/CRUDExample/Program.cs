@@ -7,6 +7,16 @@ using Repositories;
 using Entities.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Logging
+builder.Host.ConfigureLogging(loggingProvider =>
+{
+	loggingProvider.ClearProviders();
+	loggingProvider.AddConsole();
+	loggingProvider.AddDebug();
+	loggingProvider.AddEventLog();
+});
+
 builder.Services.AddControllersWithViews();
 
 //add services into IoC container
@@ -33,13 +43,18 @@ if (builder.Environment.IsDevelopment())
 
 if (builder.Environment.IsEnvironment("Test") == false)
 	Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePath: "Rotativa");
-
+app.Logger.LogDebug("debug-message");
+app.Logger.LogInformation("information-message");
+app.Logger.LogWarning("warning-message");
+app.Logger.LogError("error-message");
+app.Logger.LogCritical("critical-message");
 app.UseStaticFiles();
 app.UseRouting();
 app.MapControllers();
 
 app.Run();
 
-
 public partial class Program
+
+
 { } //make the auto-generated Program accessible programmatically
