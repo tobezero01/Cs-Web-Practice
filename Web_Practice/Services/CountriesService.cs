@@ -1,6 +1,6 @@
 ﻿using Entities;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using RepositoryContracts;
 using ServiceContracts;
@@ -11,7 +11,7 @@ namespace Services
 	public class CountriesService : ICountriesService
 	{
 		//private field
-		public readonly ICountriesRepository _countriesRepository;
+		private readonly ICountriesRepository _countriesRepository;
 
 		//constructor
 		public CountriesService(ICountriesRepository countriesRepository)
