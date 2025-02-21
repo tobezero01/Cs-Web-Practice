@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Rotativa;
 using Rotativa.AspNetCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
@@ -16,12 +15,22 @@ namespace CRUDExample.Controllers
 		private readonly IPersonsService _personsService;
 
 		private readonly ICountriesService _countriesService;
+		private readonly ILogger<PersonsController> _logger;
+		private IPersonsService personsService;
+		private ICountriesService countriesService;
 
 		//constructor
-		public PersonsController(IPersonsService personsService, ICountriesService countriesService)
+		public PersonsController(IPersonsService personsService, ICountriesService countriesService, ILogger<PersonsController> logger)
 		{
 			_personsService = personsService;
 			_countriesService = countriesService;
+			_logger = logger;
+		}
+
+		public PersonsController(IPersonsService personsService, ICountriesService countriesService)
+		{
+			this.personsService = personsService;
+			this.countriesService = countriesService;
 		}
 
 		//Url: persons/index
@@ -29,6 +38,10 @@ namespace CRUDExample.Controllers
 		[Route("/")]
 		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
 		{
+			_logger.LogInformation("Index action method of PersonsController");
+
+			_logger.LogDebug($"searchBy: {searchBy}, searchString: {searchString}, sortBy: {sortBy}, sortOrder: {sortOrder}");
+
 			//Search
 			ViewBag.SearchFields = new Dictionary<string, string>()
 	  {
@@ -80,7 +93,7 @@ namespace CRUDExample.Controllers
 				new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() });
 
 				ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
-				return View();
+				return View(personAddRequest);
 			}
 
 			//call the service method

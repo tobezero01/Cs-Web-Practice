@@ -81,6 +81,18 @@
             "Rotativa.AspNetCore": {
               "target": "Package",
               "version": "[1.2.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
