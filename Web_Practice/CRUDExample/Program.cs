@@ -6,6 +6,7 @@ using RepositoryContracts;
 using Repositories;
 using Entities.Data;
 using Serilog;
+using CRUDExample.Filters.ActionFilters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,13 @@ builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, 
 	.ReadFrom.Configuration(context.Configuration) //read configuration settings from built-in IConfiguration
 	.ReadFrom.Services(services); //read out current app's services and make them available to serilog
 });
+//it adds controllers and views as services
+builder.Services.AddControllersWithViews(options =>
+{
+	var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
 
+	options.Filters.Add(new ResponseHeaderActionFilter(logger, "My-Key-From-Global", "My-Value-From-Global"));
+});
 builder.Services.AddControllersWithViews();
 
 //add services into IoC container

@@ -2237,6 +2237,22 @@
           }
         }
       },
+      "SerilogTimings/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net6.0/SerilogTimings.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SerilogTimings.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3824,6 +3840,8 @@
           "CsvHelper": "27.2.1",
           "EPPlus": "6.0.6",
           "RepositoryContracts": "1.0.0",
+          "Serilog.Extensions.Hosting": "7.0.0",
+          "SerilogTimings": "3.1.0",
           "ServiceContracts": "1.0.0"
         },
         "compile": {
@@ -6416,6 +6434,22 @@
         "lib/netstandard2.0/Serilog.Sinks.Seq.xml",
         "serilog.sinks.seq.7.0.0.nupkg.sha512",
         "serilog.sinks.seq.nuspec"
+      ]
+    },
+    "SerilogTimings/3.1.0": {
+      "sha512": "hCMeW6+4jzbIDwRJulxVsBlAPEtQjZcbVyw8C5yYpI/shQZlYXeSivrjEexeo3nPO/H14wOPoAjE9NDXAWiPxg==",
+      "type": "package",
+      "path": "serilogtimings/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/SerilogTimings.dll",
+        "lib/net6.0/SerilogTimings.xml",
+        "lib/netstandard2.0/SerilogTimings.dll",
+        "lib/netstandard2.0/SerilogTimings.xml",
+        "serilog-timings.png",
+        "serilogtimings.3.1.0.nupkg.sha512",
+        "serilogtimings.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {

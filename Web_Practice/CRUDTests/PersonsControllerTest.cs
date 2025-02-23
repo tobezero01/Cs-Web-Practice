@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 using FluentAssertions;
+using CRUDExample.Controllers;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
-using CRUDExample.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUDTests

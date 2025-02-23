@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CRUDExample.Filters.ActionFilters;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
 using ServiceContracts;
@@ -16,8 +17,6 @@ namespace CRUDExample.Controllers
 
 		private readonly ICountriesService _countriesService;
 		private readonly ILogger<PersonsController> _logger;
-		private IPersonsService personsService;
-		private ICountriesService countriesService;
 
 		//constructor
 		public PersonsController(IPersonsService personsService, ICountriesService countriesService, ILogger<PersonsController> logger)
@@ -27,15 +26,11 @@ namespace CRUDExample.Controllers
 			_logger = logger;
 		}
 
-		public PersonsController(IPersonsService personsService, ICountriesService countriesService)
-		{
-			this.personsService = personsService;
-			this.countriesService = countriesService;
-		}
-
 		//Url: persons/index
 		[Route("[action]")]
 		[Route("/")]
+		[TypeFilter(typeof(PersonsListActionFilter))]
+		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "X-Custom-Key", "Custom-Value" })]
 		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
 		{
 			_logger.LogInformation("Index action method of PersonsController");
@@ -44,14 +39,14 @@ namespace CRUDExample.Controllers
 
 			//Search
 			ViewBag.SearchFields = new Dictionary<string, string>()
-	  {
-		{ nameof(PersonResponse.PersonName), "Person Name" },
-		{ nameof(PersonResponse.Email), "Email" },
-		{ nameof(PersonResponse.DateOfBirth), "Date of Birth" },
-		{ nameof(PersonResponse.Gender), "Gender" },
-		{ nameof(PersonResponse.CountryID), "Country" },
-		{ nameof(PersonResponse.Address), "Address" }
-	  };
+			  {
+				{ nameof(PersonResponse.PersonName), "Person Name" },
+				{ nameof(PersonResponse.Email), "Email" },
+				{ nameof(PersonResponse.DateOfBirth), "Date of Birth" },
+				{ nameof(PersonResponse.Gender), "Gender" },
+				{ nameof(PersonResponse.CountryID), "Country" },
+				{ nameof(PersonResponse.Address), "Address" }
+			  };
 
 			List<PersonResponse> persons = await _personsService.GetFilteredPersons(searchBy, searchString);
 			ViewBag.CurrentSearchBy = searchBy;
