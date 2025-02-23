@@ -10,6 +10,8 @@ using System.IO;
 namespace CRUDExample.Controllers
 {
 	[Route("[controller]")]
+	[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments =
+		new object[] { "My-Key-From-Controller", "My-Value-From-Controller", 3 }, Order = 3)]
 	public class PersonsController : Controller
 	{
 		//private fields
@@ -30,8 +32,9 @@ namespace CRUDExample.Controllers
 		[Route("[action]")]
 		[Route("/")]
 		[TypeFilter(typeof(PersonsListActionFilter))]
-		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "X-Custom-Key", "Custom-Value" })]
-		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
+		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)]
+		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy =
+			nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
 		{
 			_logger.LogInformation("Index action method of PersonsController");
 

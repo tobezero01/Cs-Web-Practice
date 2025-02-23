@@ -1,0 +1,7 @@
+2025-02-23 21:45:14.885 +07:00 [INF] information-message
+2025-02-23 21:45:14.926 +07:00 [WRN] warning-message
+2025-02-23 21:45:14.930 +07:00 [ERR] error-message
+2025-02-23 21:45:14.932 +07:00 [FTL] critical-message
+2025-02-23 21:45:15.893 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 21:45:15.900 +07:00 [INF] Hosting environment: Development
+2025-02-23 21:45:15.904 +07:00 [INF] Content root path: D:\C#\Web_Practice\Web_Practice\CRUDExample
