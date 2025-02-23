@@ -2,7 +2,7 @@
 
 namespace CRUDExample.Filters.ResultFilter
 {
-	public class TokenResultFilter : IResultFilter
+	public class PersonAlwaysRunResultFilter : IAlwaysRunResultFilter
 	{
 		public void OnResultExecuted(ResultExecutedContext context)
 		{
@@ -10,7 +10,12 @@ namespace CRUDExample.Filters.ResultFilter
 
 		public void OnResultExecuting(ResultExecutingContext context)
 		{
-			context.HttpContext.Response.Cookies.Append("Auth-Key", "A100");
+			if (context.Filters.OfType<SkipFilter>().Any())
+			{
+				return;
+			}
+
+			//TO DO: before logic here
 		}
 	}
 }

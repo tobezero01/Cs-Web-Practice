@@ -16,12 +16,11 @@ namespace CRUDExample.Filters.ActionFilters
 		public void OnActionExecuted(ActionExecutedContext context)
 		{
 			//To do: add after logic here
-			_logger.LogInformation("PersonsListActionFilter.OnActionExecuted method");
+			_logger.LogInformation("{FilterName}.{MethodName} method", nameof(PersonsListActionFilter), nameof(OnActionExecuted));
 
 			PersonsController personsController = (PersonsController)context.Controller;
 
-			IDictionary<string, object?>? parameters =
-				(IDictionary<string, object?>?)context.HttpContext.Items["arguments"];
+			IDictionary<string, object?>? parameters = (IDictionary<string, object?>?)context.HttpContext.Items["arguments"];
 
 			if (parameters != null)
 			{
@@ -47,44 +46,51 @@ namespace CRUDExample.Filters.ActionFilters
 			}
 
 			personsController.ViewBag.SearchFields = new Dictionary<string, string>()
-			  {
-				{ nameof(PersonResponse.PersonName), "Person Name" },
-				{ nameof(PersonResponse.Email), "Email" },
-				{ nameof(PersonResponse.DateOfBirth), "Date of Birth" },
-				{ nameof(PersonResponse.Gender), "Gender" },
-				{ nameof(PersonResponse.CountryID), "Country" },
-				{ nameof(PersonResponse.Address), "Address" }
-			  };
+	  {
+		{ nameof(PersonResponse.PersonName), "Person Name" },
+		{ nameof(PersonResponse.Email), "Email" },
+		{ nameof(PersonResponse.DateOfBirth), "Date of Birth" },
+		{ nameof(PersonResponse.Gender), "Gender" },
+		{ nameof(PersonResponse.CountryID), "Country" },
+		{ nameof(PersonResponse.Address), "Address" }
+	  };
+
 		}
+
 
 		public void OnActionExecuting(ActionExecutingContext context)
 		{
 			context.HttpContext.Items["arguments"] = context.ActionArguments;
 
-			// to do
-			_logger.LogInformation("PersonsListActionFilter.OnActionExecuting method");
+			//To do: add before logic here
+			_logger.LogInformation("{FilterName}.{MethodName} method", nameof(PersonsListActionFilter), nameof(OnActionExecuting));
+
 			if (context.ActionArguments.ContainsKey("searchBy"))
 			{
 				string? searchBy = Convert.ToString(context.ActionArguments["searchBy"]);
+
+				//validate the searchBy parameter value
 				if (!string.IsNullOrEmpty(searchBy))
 				{
 					var searchByOptions = new List<string>() {
-					  nameof(PersonResponse.PersonName),
-					  nameof(PersonResponse.Email),
-					  nameof(PersonResponse.DateOfBirth),
-					  nameof(PersonResponse.Gender),
-					  nameof(PersonResponse.CountryID),
-					  nameof(PersonResponse.Address)
-					 };
+	  nameof(PersonResponse.PersonName),
+	  nameof(PersonResponse.Email),
+	  nameof(PersonResponse.DateOfBirth),
+	  nameof(PersonResponse.Gender),
+	  nameof(PersonResponse.CountryID),
+	  nameof(PersonResponse.Address)
+	 };
 
+					//reset the searchBy paramer value
 					if (searchByOptions.Any(temp => temp == searchBy) == false)
 					{
 						_logger.LogInformation("searchBy actual value {searchBy}", searchBy);
 						context.ActionArguments["searchBy"] = nameof(PersonResponse.PersonName);
-						_logger.LogInformation("searchBy updated value {searchBy}", searchBy);
+						_logger.LogInformation("searchBy updated value {searchBy}", context.ActionArguments["searchBy"]);
 					}
 				}
 			}
+
 		}
 	}
 }

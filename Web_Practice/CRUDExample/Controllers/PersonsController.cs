@@ -1,5 +1,7 @@
-﻿using CRUDExample.Filters.ActionFilters;
+﻿using CRUDExample.Filters;
+using CRUDExample.Filters.ActionFilters;
 using CRUDExample.Filters.AuthorizationFilters;
+using CRUDExample.Filters.ExceptionFilter;
 using CRUDExample.Filters.ResourceFilters;
 using CRUDExample.Filters.ResultFilter;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +17,8 @@ namespace CRUDExample.Controllers
 	[Route("[controller]")]
 	[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments =
 		new object[] { "My-Key-From-Controller", "My-Value-From-Controller", 3 }, Order = 3)]
+	[TypeFilter(typeof(PersonAlwaysRunResultFilter))]
+	[TypeFilter(typeof(HandleExceptionFilter))]
 	public class PersonsController : Controller
 	{
 		//private fields
@@ -37,6 +41,7 @@ namespace CRUDExample.Controllers
 		[TypeFilter(typeof(PersonsListActionFilter), Order = 4)]
 		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)]
 		[TypeFilter(typeof(PersonsListResultFilter))]
+		[SkipFilter]
 		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy =
 			nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
 		{
