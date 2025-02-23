@@ -31,7 +31,7 @@ namespace CRUDExample.Controllers
 		//Url: persons/index
 		[Route("[action]")]
 		[Route("/")]
-		[TypeFilter(typeof(PersonsListActionFilter))]
+		[TypeFilter(typeof(PersonsListActionFilter), Order = 4)]
 		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)]
 		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy =
 			nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
@@ -67,6 +67,7 @@ namespace CRUDExample.Controllers
 		//Url: persons/create
 		[Route("[action]")]
 		[HttpGet]
+		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "my-key", "my-value", 4 })]
 		public async Task<IActionResult> Create()
 		{
 			List<CountryResponse> countries = await _countriesService.GetAllCountries();
@@ -82,20 +83,10 @@ namespace CRUDExample.Controllers
 		[HttpPost]
 		//Url: persons/create
 		[Route("[action]")]
-		public async Task<IActionResult> Create(PersonAddRequest personAddRequest)
+		[TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
+		public async Task<IActionResult> Create(PersonAddRequest personRequest)
 		{
-			if (!ModelState.IsValid)
-			{
-				List<CountryResponse> countries = await _countriesService.GetAllCountries();
-				ViewBag.Countries = countries.Select(temp =>
-				new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() });
-
-				ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
-				return View(personAddRequest);
-			}
-
-			//call the service method
-			PersonResponse personResponse = await _personsService.AddPerson(personAddRequest);
+			PersonResponse personResponse = await _personsService.AddPerson(personRequest);
 
 			//navigate to Index() action method (it makes another get request to "persons/index"
 			return RedirectToAction("Index", "Persons");
