@@ -1,4 +1,7 @@
 ﻿using CRUDExample.Filters.ActionFilters;
+using CRUDExample.Filters.AuthorizationFilters;
+using CRUDExample.Filters.ResourceFilters;
+using CRUDExample.Filters.ResultFilter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
@@ -33,6 +36,7 @@ namespace CRUDExample.Controllers
 		[Route("/")]
 		[TypeFilter(typeof(PersonsListActionFilter), Order = 4)]
 		[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)]
+		[TypeFilter(typeof(PersonsListResultFilter))]
 		public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy =
 			nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
 		{
@@ -84,6 +88,7 @@ namespace CRUDExample.Controllers
 		//Url: persons/create
 		[Route("[action]")]
 		[TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
+		[TypeFilter(typeof(FeatureDisabledResourceFilter), Arguments = new object[] { false })]
 		public async Task<IActionResult> Create(PersonAddRequest personRequest)
 		{
 			PersonResponse personResponse = await _personsService.AddPerson(personRequest);
@@ -94,6 +99,7 @@ namespace CRUDExample.Controllers
 
 		[HttpGet]
 		[Route("[action]/{personID}")] //Eg: /persons/edit/1
+		[TypeFilter(typeof(TokenResultFilter))]
 		public async Task<IActionResult> Edit(Guid personID)
 		{
 			PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personID);
@@ -113,29 +119,19 @@ namespace CRUDExample.Controllers
 
 		[HttpPost]
 		[Route("[action]/{personID}")]
-		public async Task<IActionResult> Edit(PersonUpdateRequest personUpdateRequest)
+		[TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
+		[TypeFilter(typeof(TokenAuthorizationFilter))]
+		public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
 		{
-			PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personUpdateRequest.PersonID);
+			PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personRequest.PersonID);
 
 			if (personResponse == null)
 			{
 				return RedirectToAction("Index");
 			}
 
-			if (ModelState.IsValid)
-			{
-				PersonResponse updatedPerson = await _personsService.UpdatePerson(personUpdateRequest);
-				return RedirectToAction("Index");
-			}
-			else
-			{
-				List<CountryResponse> countries = await _countriesService.GetAllCountries();
-				ViewBag.Countries = countries.Select(temp =>
-				new SelectListItem() { Text = temp.CountryName, Value = temp.CountryID.ToString() });
-
-				ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
-				return View(personResponse.ToPersonUpdateRequest());
-			}
+			PersonResponse updatedPerson = await _personsService.UpdatePerson(personRequest);
+			return RedirectToAction("Index");
 		}
 
 		[HttpGet]
