@@ -1,0 +1,846 @@
+{
+  "Version": 1,
+  "Hash": "3vipN8oSMnPBKTZItrpqXP7IHsMA7+r0TvNKAVk9rYk=",
+  "Source": "ContactsManager.UI",
+  "BasePath": "_content/ContactsManager.UI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ContactsManager.UI\\wwwroot",
+      "Source": "ContactsManager.UI",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\error.svg",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "error#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3iwubkh3iq",
+      "Integrity": "9XRmwQ0X13DL6FasTx/6HZ2cpKYSDQNLj7rqUngh3uU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\error.svg"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\favicon.ico",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.min.js",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "jquery.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ehgnz7f14e",
+      "Integrity": "zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery.min.js"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.validate.min.js",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "jquery.validate.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9xennu59i4",
+      "Integrity": "sxUVUQTdesX9Z/MoT6Xpsfws/9SC9ZfmzCtVfaNb05s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d171zkdrjx",
+      "Integrity": "H8OdhvNWpxCHXd9Osw8R7yOsWj9CQKGDMlujYVBsYMw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\logo.png",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9l4yhz6pog",
+      "Integrity": "Q/dIRhSpwLLb/zcBTUHDnaztxZqr9fzLibQd9N+lMXQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "Rotativa/wkhtmltopdf#[.{fingerprint}]?.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cuquy3615b",
+      "Integrity": "ZNF2gjIL/9RbIgjtE7E21ZE56CVzdF8UVWzyXpXL2Ag=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Identity": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\StyleSheet.css",
+      "SourceId": "ContactsManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.UI",
+      "RelativePath": "StyleSheet#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hsdbhxagou",
+      "Integrity": "b3C6xWKwFoW2/IpVCyiu35vf7cFbQ99PPHcmVObHagk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "error.3iwubkh3iq.svg",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\error.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9XRmwQ0X13DL6FasTx/6HZ2cpKYSDQNLj7rqUngh3uU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3iwubkh3iq"
+        },
+        {
+          "Name": "label",
+          "Value": "error.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9XRmwQ0X13DL6FasTx/6HZ2cpKYSDQNLj7rqUngh3uU="
+        }
+      ]
+    },
+    {
+      "Route": "error.svg",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\error.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9XRmwQ0X13DL6FasTx/6HZ2cpKYSDQNLj7rqUngh3uU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9XRmwQ0X13DL6FasTx/6HZ2cpKYSDQNLj7rqUngh3uU="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "jquery.min.ehgnz7f14e.js",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ehgnz7f14e"
+        },
+        {
+          "Name": "label",
+          "Value": "jquery.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs="
+        }
+      ]
+    },
+    {
+      "Route": "jquery.min.js",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs="
+        }
+      ]
+    },
+    {
+      "Route": "jquery.validate.min.9xennu59i4.js",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.validate.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sxUVUQTdesX9Z/MoT6Xpsfws/9SC9ZfmzCtVfaNb05s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9xennu59i4"
+        },
+        {
+          "Name": "label",
+          "Value": "jquery.validate.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sxUVUQTdesX9Z/MoT6Xpsfws/9SC9ZfmzCtVfaNb05s="
+        }
+      ]
+    },
+    {
+      "Route": "jquery.validate.min.js",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.validate.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sxUVUQTdesX9Z/MoT6Xpsfws/9SC9ZfmzCtVfaNb05s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sxUVUQTdesX9Z/MoT6Xpsfws/9SC9ZfmzCtVfaNb05s="
+        }
+      ]
+    },
+    {
+      "Route": "jquery.validate.unobtrusive.min.d171zkdrjx.js",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8OdhvNWpxCHXd9Osw8R7yOsWj9CQKGDMlujYVBsYMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d171zkdrjx"
+        },
+        {
+          "Name": "label",
+          "Value": "jquery.validate.unobtrusive.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8OdhvNWpxCHXd9Osw8R7yOsWj9CQKGDMlujYVBsYMw="
+        }
+      ]
+    },
+    {
+      "Route": "jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8OdhvNWpxCHXd9Osw8R7yOsWj9CQKGDMlujYVBsYMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8OdhvNWpxCHXd9Osw8R7yOsWj9CQKGDMlujYVBsYMw="
+        }
+      ]
+    },
+    {
+      "Route": "logo.9l4yhz6pog.png",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "627937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q/dIRhSpwLLb/zcBTUHDnaztxZqr9fzLibQd9N+lMXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9l4yhz6pog"
+        },
+        {
+          "Name": "label",
+          "Value": "logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q/dIRhSpwLLb/zcBTUHDnaztxZqr9fzLibQd9N+lMXQ="
+        }
+      ]
+    },
+    {
+      "Route": "logo.png",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "627937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q/dIRhSpwLLb/zcBTUHDnaztxZqr9fzLibQd9N+lMXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q/dIRhSpwLLb/zcBTUHDnaztxZqr9fzLibQd9N+lMXQ="
+        }
+      ]
+    },
+    {
+      "Route": "Rotativa/wkhtmltopdf.cuquy3615b.exe",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41563648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.microsoft.portable-executable"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNF2gjIL/9RbIgjtE7E21ZE56CVzdF8UVWzyXpXL2Ag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cuquy3615b"
+        },
+        {
+          "Name": "label",
+          "Value": "Rotativa/wkhtmltopdf.exe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNF2gjIL/9RbIgjtE7E21ZE56CVzdF8UVWzyXpXL2Ag="
+        }
+      ]
+    },
+    {
+      "Route": "Rotativa/wkhtmltopdf.exe",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41563648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.microsoft.portable-executable"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNF2gjIL/9RbIgjtE7E21ZE56CVzdF8UVWzyXpXL2Ag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNF2gjIL/9RbIgjtE7E21ZE56CVzdF8UVWzyXpXL2Ag="
+        }
+      ]
+    },
+    {
+      "Route": "StyleSheet.css",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\StyleSheet.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11129"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b3C6xWKwFoW2/IpVCyiu35vf7cFbQ99PPHcmVObHagk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b3C6xWKwFoW2/IpVCyiu35vf7cFbQ99PPHcmVObHagk="
+        }
+      ]
+    },
+    {
+      "Route": "StyleSheet.hsdbhxagou.css",
+      "AssetFile": "D:\\C#\\Web_Practice\\Web_Practice_Clean_Architecture\\ContactsManager.UI\\wwwroot\\StyleSheet.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11129"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b3C6xWKwFoW2/IpVCyiu35vf7cFbQ99PPHcmVObHagk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 16:53:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hsdbhxagou"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleSheet.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b3C6xWKwFoW2/IpVCyiu35vf7cFbQ99PPHcmVObHagk="
+        }
+      ]
+    }
+  ]
+}
