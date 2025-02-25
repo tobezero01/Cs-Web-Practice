@@ -1,0 +1,10 @@
+2025-02-24 17:45:19.962 +07:00 [INF] User profile is available. Using 'C:\Users\ducnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-24 17:45:20.302 +07:00 [INF] Now listening on: http://localhost:5298
+2025-02-24 17:45:24.718 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/ - -
+2025-02-24 17:45:24.975 +07:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2025-02-24 17:45:25.051 +07:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'

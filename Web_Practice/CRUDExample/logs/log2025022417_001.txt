@@ -1,0 +1,13 @@
+2025-02-24 17:45:20.574 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-24 17:45:20.592 +07:00 [INF] Hosting environment: Development
+2025-02-24 17:45:20.593 +07:00 [INF] Content root path: D:\C#\Web_Practice\Web_Practice\CRUDExample
+2025-02-24 17:47:49.713 +07:00 [INF] User profile is available. Using 'C:\Users\ducnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-24 17:47:49.866 +07:00 [INF] Now listening on: http://localhost:5298
+2025-02-24 17:47:49.964 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5298/ - -
+2025-02-24 17:47:50.154 +07:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2025-02-24 17:47:50.189 +07:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
