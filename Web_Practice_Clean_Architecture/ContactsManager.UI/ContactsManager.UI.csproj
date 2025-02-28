@@ -26,7 +26,7 @@
   </ItemGroup>
 
  <ItemGroup>
-  <InternalsVisibleTo Include="ContactsManager.IntegrationTests"/>
+  <InternalsVisibleTo Include="ContactsManager.IntegrationTests" />
  </ItemGroup>
 
 </Project>
